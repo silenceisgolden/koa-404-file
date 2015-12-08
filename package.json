@@ -1,0 +1,42 @@
+{
+  "name": "koa-server-push",
+  "description": "Middleware for serving a 404 file if needed.",
+  "repository": "silenceisgolden/koa-404-file",
+  "version": "0.0.0",
+  "bugs": {
+    "url": "https://github.com/silenceisgolden/koa-404-file/issues",
+    "email": "aj@logicallyabstract.com"
+  },
+  "author": {
+    "name": "Alexander Klein",
+    "email": "aj@logicallyabstract.com"
+  },
+  "keywords": [
+    "koa",
+    "middleware",
+    "404",
+    "file",
+    "serve",
+    "static"
+  ],
+  "dependencies": {
+    "debug": "^2.2.0",
+    "koa-send": "^3.1.0"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "istanbul": "^0.4.1",
+    "istanbul-coveralls": "^1.0.3",
+    "koa": "^2.0.0-alpha.3",
+    "koa-convert": "^1.2.0",
+    "koa-static": "^1.5.2",
+    "mocha": "^2.3.4",
+    "supertest": "^1.1.0"
+  },
+  "scripts": {
+    "open-coverage": "open coverage/lcov-report/*.html",
+    "test": "istanbul cover _mocha && istanbul-coveralls",
+    "test-local": "istanbul cover _mocha"
+  },
+  "license": "MIT"
+}
